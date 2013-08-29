@@ -1,0 +1,9 @@
+{
+    "name": "express-helloWorld",
+    "description": "Hello world test app",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "express": "3.x"
+    }
+}
