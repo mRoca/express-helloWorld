@@ -1,4 +1,4 @@
-var httpHelper = require('./helpers/httpHelper.js');
+var httpHelper = require('../helpers/httpHelper.js');
 var should = require("should");
 var server = require("../server.js");
 

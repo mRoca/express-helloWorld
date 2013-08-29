@@ -9,7 +9,7 @@
         "start"     : "node server.js",
         "predeploy" : "echo This will be run before deploying the app",
         "postdeploy": "echo This will be run after deploying the app",
-        "test"      : "node_modules\\.bin\\mocha"
+        "test"      : "node test/run.js"
     },
     "repository"     : {
         "type": "git",
@@ -27,7 +27,8 @@
         "express": "3.x"
     },
     "devDependencies": {
-        "mocha" : "",
-        "should": ""
+        "mocha"       : "",
+        "should"      : "",
+        "mocha-runner": ""
     }
 }
