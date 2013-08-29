@@ -1,28 +1,33 @@
 {
-    "name": "express-helloWorld",
-    "description": "Hello world simple test app",
-    "version": "0.0.1",
-    "private": false,
-    "preferGlobal": false,
-    "author": "Michel Roca <mRoca@gmail.com>",
-    "scripts": {
-        "start": "node server.js",
-        "predeploy": "echo This will be run before deploying the app",
-        "postdeploy": "echo This will be run after deploying the app"
+    "name"           : "express-helloWorld",
+    "description"    : "Hello world simple test app",
+    "version"        : "0.0.1",
+    "private"        : false,
+    "preferGlobal"   : false,
+    "author"         : "Michel Roca <mRoca@gmail.com>",
+    "scripts"        : {
+        "start"     : "node server.js",
+        "predeploy" : "echo This will be run before deploying the app",
+        "postdeploy": "echo This will be run after deploying the app",
+        "test"      : "node_modules\\.bin\\mocha"
     },
-    "repository": {
+    "repository"     : {
         "type": "git",
-        "url": "https://github.com/mRoca/express-helloWorld.git"
+        "url" : "https://github.com/mRoca/express-helloWorld.git"
     },
-    "keywords": [
+    "keywords"       : [
         "express",
         "hello",
         "world",
         "http",
         "server"
     ],
-    "license": "MIT",
-    "dependencies": {
+    "license"        : "MIT",
+    "dependencies"   : {
         "express": "3.x"
+    },
+    "devDependencies": {
+        "mocha" : "",
+        "should": ""
     }
 }
