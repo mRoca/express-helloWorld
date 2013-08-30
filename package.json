@@ -28,7 +28,6 @@
     },
     "devDependencies": {
         "mocha"       : "",
-        "should"      : "",
-        "mocha-runner": ""
+        "should"      : ""
     }
 }
