@@ -1,13 +1,14 @@
-"use strict";
+'use strict';
 
-var httpHelper = require("../helpers/httpHelper.js");
-var should = require("should");
-var server = require("../server.js");
+require('should');
+require('../server.js');
 
-httpHelper.client.host = "localhost";
-httpHelper.client.port = "3000";
+var httpHelper = require('../helpers/httpHelper.js');
 
-describe("When testing routes", function () {
+httpHelper.client.host = 'localhost';
+httpHelper.client.port = '3000';
+
+describe('When testing routes', function () {
 
     it('GET / should return 200', function (done) {
         httpHelper.client.get('/', function (err, res, body) {
@@ -21,7 +22,7 @@ describe("When testing routes", function () {
         httpHelper.client.get('/hello', function (err, res, body) {
             if ( err ) err.should.equal(null);
             res.statusCode.should.equal(200);
-            body.should.include("Hello World");
+            body.should.include('Hello World');
             done();
         });
     });
