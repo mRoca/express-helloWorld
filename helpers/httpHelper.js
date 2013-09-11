@@ -1,6 +1,8 @@
+"use strict";
+
 var http = require('http');
 
-function http_get(host, port, url, cb) {
+function httpGet(host, port, url, cb) {
     var options = {
         host  : host,
         port  : port,
@@ -26,10 +28,10 @@ function http_get(host, port, url, cb) {
 }
 
 var client = {
-    host: "",
-    port: "",
-    get: function (url, cb) {
-        http_get(this.host, this.port, url, cb);
+    host: '',
+    port: '',
+    get : function (url, cb) {
+        httpGet(this.host, this.port, url, cb);
     }
 };
 

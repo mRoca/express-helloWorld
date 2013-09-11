@@ -1,7 +1,7 @@
 express-helloWorld
 ====
 
-Another Hello world simple test app
+Another Hello world simple test app.
 
 Usage
 ====
